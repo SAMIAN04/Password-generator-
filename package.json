@@ -1,0 +1,27 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  
+  
+  
+    "scripts": {
+      "tailwindcss": "npx tailwindcss",
+      "tailwindcss:build": "npx tailwindcss build",
+      "tailwindcss:watch": "npx tailwindcss watch"
+    }
+  
+  
+    
+}
+
