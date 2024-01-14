@@ -1,4 +1,4 @@
-const input = document.getElementById(`input`);
+const input = document.getElementById(`passwordbox`);
 const copybtn = document.getElementById(`copybtn`);
 const genbtn = document.getElementById(`genbtn`);
 const letters = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`;
