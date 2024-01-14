@@ -8,7 +8,7 @@ const symbolCheckbox = document.getElementById(`symbol`);
 const numberChekbox = document.getElementById(`number`)
 const rangeValue = document.getElementById(`range`);
 const rangeDisplay = document.getElementById(`rangeDisplay`);
-
+const copynoty = document.getElementById(`copynoty`)
 
 let password =``;
 let length = rangeValue.value;
@@ -16,6 +16,7 @@ let length = rangeValue.value;
 //event listeners
 rangeValue.addEventListener(`change`,updateValue);
  genbtn.addEventListener(`click`,showpassword);
+ copybtn.addEventListener(`click`,copy)
 
 // functions
  function genratepassword() {
@@ -50,6 +51,16 @@ function updateValue() {
  
     rangeDisplay.innerHTML = `length[${rangeValue.value}]`
     
+}
+function copy() {
+   input.select()
+   document.execCommand(`copy`);
+   copynoty.classList.replace(`translate-y-[-50px]`,`translate-y-[50px]`)
+
+  setTimeout(() => {
+   copynoty.classList.replace(`translate-y-[50px]`,`translate-y-[-50px]`)
+  }, 1200);
+
 }
 //loops and password genrate engine
 
